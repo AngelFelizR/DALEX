@@ -14,7 +14,7 @@
 #'
 #' @param explainer a model to be explained, preprocessed by the \code{explain} function
 #' @param new_observation a new observation for which predictions need to be explained
-#' @param ... other parameters that will be passed to \code{iBreakDown::break_down}
+#' @param ... other parameters that will be passed to \code{iBreakDown::break_down} or \code{iBreakDown::shap}
 #' @param variable_splits named list of splits for variables. It is used by oscillations based measures. Will be passed to \code{\link[ingredients]{ceteris_paribus}}.
 #' @param variables names of variables for which splits shall be calculated. Will be passed to \code{\link[ingredients]{ceteris_paribus}}.
 #' @param N the maximum number of observations used for calculation of attributions. By default NULL (use all) or 500 (for oscillations).
